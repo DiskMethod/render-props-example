@@ -21,7 +21,7 @@ class Mouse extends React.Component {
   render() {
     return (
       <div style={{ height: "100vh" }} onMouseMove={this.handleMouseMove}>
-        {this.props.render(this.state)}
+        {this.props.children(this.state)}
       </div>
     );
   }
